@@ -1,12 +1,151 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Whatsapp</title>
-    <link rel="stylesheet" href="./assets/css/output.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- <link rel="stylesheet" href="./assets/css/output.css"> -->
 </head>
-<body>
-    <h1>Whatsapp UI</h1>
+
+<body class="bg-green-300 p-10">
+    <h1 class="text-center mb-3 font-semibold">Whatsapp UI <br> <i class="float-right">-Tausi</i>
+    </h1><br>
+    <section class="bg-emerald-800 max-w-sm mx-auto ">
+        <div class="justify-between p-5 text-white flex items-center">
+            <h4 class="font-semibold">WhatsApp</h4>
+            <div class="flex">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5A6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5S14 7.01 14 9.5S11.99 14 9.5 14z" />
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+                    <path fill="currentColor"
+                        d="M12 16a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2m0-6a2 2 0 0 1 2 2a2 2 0 0 1-2 2a2 2 0 0 1-2-2a2 2 0 0 1 2-2Z" />
+                </svg>
+            </div>
+        </div>
+        <!-- cam, chat, status, calls -->
+        <ul class="flex text-white pb-3 items-center space-x-4 justify-around">
+            <li class="bg-emerald-800 text-white px-4 flex items-center ">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24"
+                    class="fill-current w-7">
+                    <path fill="currentColor"
+                        d="M12 18q2.075 0 3.538-1.462Q17 15.075 17 13q0-2.075-1.462-3.538Q14.075 8 12 8Q9.925 8 8.463 9.462Q7 10.925 7 13q0 2.075 1.463 3.538Q9.925 18 12 18Zm0-2q-1.25 0-2.125-.875T9 13q0-1.25.875-2.125T12 10q1.25 0 2.125.875T15 13q0 1.25-.875 2.125T12 16Zm6-6q.425 0 .712-.288Q19 9.425 19 9t-.288-.713Q18.425 8 18 8t-.712.287Q17 8.575 17 9t.288.712Q17.575 10 18 10ZM4 21q-.825 0-1.412-.587Q2 19.825 2 19V7q0-.825.588-1.412Q3.175 5 4 5h3.15L8.7 3.325q.15-.15.337-.238Q9.225 3 9.425 3h5.15q.2 0 .388.087q.187.088.337.238L16.85 5H20q.825 0 1.413.588Q22 6.175 22 7v12q0 .825-.587 1.413Q20.825 21 20 21Z" />
+                </svg>
+
+            </li>
+            <li class="flex items-center relative">
+                <div class="uppercase mr-2">chats</div><span
+                    class="bg-white text-emerald-800 rounded-full p-0.5 w-5 h-5 text-xs font-bold">10</span>
+                <div class="bg-white right-0 left-0 top-9 w-19 h-1 absolute"></div>
+            </li>
+            <li class="flex items-center">
+                <div class="uppercase mr-2">Status</div>
+            </li>
+            <li class="flex items-center">
+                <div class="uppercase mr-2">calls</div>
+            </li>
+        </ul>
+        <div class="hover:cursor-pointer ">
+            <!-- Chatsss 1 -->
+            <div class="bg-white hover:bg-gray-200 flex items-center space-x-4 px-3 py-4">
+                <!-- profile pic -->
+                <div>
+                    <img src="https://ui-avatars.com/api/?name= Tausi&background=random" alt="LathiTausi"
+                        class="rounded-full">
+                </div>
+                <!-- person  -->
+                <div class="flex-1">
+                    <h4 class="font-semibold">Tausi😍</h4>
+                    <p class="text-gray-600 text-sm">Hi developer</p>
+                </div>
+                <!-- time and no of msgs -->
+                <div class="flex flex-col items-center space-y-1">
+                    <span class="text-green-600 font-semibold text-sm">02:52AM</span>
+                    <span
+                        class="text-white bg-green-600 rounded-full w-6 flex text-xs h-6 p-2 font-bold items-center">2</span>
+                </div>
+            </div>
+            <!-- Chatsss 2-->
+            <div class="bg-white hover:bg-gray-200 flex items-center space-x-4 px-3 py-4">
+                <!-- profile pic -->
+                <div>
+                    <img src="https://ui-avatars.com/api/?name=iqra tasmiya&background=random" alt="Iqra Tasmiya"
+                        class="rounded-full">
+                </div>
+                <!-- person  -->
+                <div class="flex-1">
+                    <h4 class="font-semibold">Iqra Tasmiya</h4>
+                    <p class="text-gray-600 text-sm">Hi developer</p>
+                </div>
+                <!-- time and no of msgs -->
+                <div class="flex flex-col items-center space-y-1">
+                    <span class="text-green-600 font-semibold text-sm">02:52AM</span>
+                    <span
+                        class="text-white bg-green-600 rounded-full w-6 flex text-xs h-6 p-2 font-bold items-center">2</span>
+                </div>
+            </div>
+            <!-- Chatsss 3-->
+            <div class="bg-white hover:bg-gray-200 flex items-center space-x-4 px-3 py-4">
+                <!-- profile pic -->
+                <div>
+                    <img src="https://ui-avatars.com/api/?name=Anaiza &background=random" alt="Anaiza Wagah"
+                        class="rounded-full">
+                </div>
+                <!-- person  -->
+                <div class="flex-1">
+                    <h4 class="font-semibold">Anaiza Wagah</h4>
+                    <p class="text-gray-600 text-sm">Hi developer</p>
+                </div>
+                <!-- time and no of msgs -->
+                <div class="flex flex-col items-center space-y-1">
+                    <span class="text-green-600 font-semibold text-sm">02:52AM</span>
+                    <span
+                        class="text-white bg-green-600 rounded-full w-6 flex text-xs h-6 p-2 font-bold items-center">2</span>
+                </div>
+            </div>
+            <!-- Chatsss 4-->
+            <div class="bg-white hover:bg-gray-200 flex items-center space-x-4 px-3 py-4">
+                <!-- profile pic -->
+                <div>
+                    <img src="https://ui-avatars.com/api/?name=Aara begum&background=random" alt="Aara Begum"
+                        class="rounded-full">
+                </div>
+                <!-- person  -->
+                <div class="flex-1">
+                    <h4 class="font-semibold">Aara Begum</h4>
+                    <p class="text-gray-600 text-sm">Hi developer</p>
+                </div>
+                <!-- time and no of msgs -->
+                <div class="flex flex-col items-center space-y-1">
+                    <span class="text-green-600 font-semibold text-sm">02:52AM</span>
+                    <span
+                        class="text-white bg-green-600 rounded-full w-6 flex text-xs h-6 p-2 font-bold items-center">2</span>
+                </div>
+            </div>
+            <!-- Chatsss 5-->
+            <div class="bg-white hover:bg-gray-200 flex items-center space-x-4 px-3 py-4">
+                <!-- profile pic -->
+                <div>
+                    <img src="https://ui-avatars.com/api/?name=Zoya shuf&background=random" alt="zoya"
+                        class="rounded-full">
+                </div>
+                <!-- person  -->
+                <div class="flex-1">
+                    <h4 class="font-semibold">Zoya Shufana</h4>
+                    <p class="text-gray-600 text-sm">Hi developer</p>
+                </div>
+                <!-- time and no of msgs -->
+                <div class="flex flex-col items-center space-y-1">
+                    <span class="text-green-600 font-semibold text-sm">02:52AM</span>
+                    <span
+                        class="text-white bg-green-600 rounded-full w-6 flex text-xs h-6 p-2 font-bold items-center">2</span>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
+
 </html>
